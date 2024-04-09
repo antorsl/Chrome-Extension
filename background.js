@@ -54,22 +54,22 @@ function openPageOnContextMenuClick () {
   chrome.contextMenus.onClicked.addListener(function (info) {
     let url;
     if (info.menuItemId === 'showItemOnBackStage') {
-      url = `https://backstage.bridgeapi.tools/user/${removeAllSpaces(info.selectionText)}`;
+      url = `https://backstage.domain.com/user/${removeAllSpaces(info.selectionText)}`;
     }
     if (info.menuItemId === 'showItemOnMetabase') {
-      url = `https://metabase.bridgeapi.tools/question/261-view-the-refreshlogs-table-backstage-integration?itemID=${removeAllSpaces(info.selectionText)}`;
+      url = `https://metabase.domain.com/question/261-view-the-refreshlogs-table-backstage-integration?itemID=${removeAllSpaces(info.selectionText)}`;
     }
     if (info.menuItemId === 'showTransactionsOnMetabase') {
-      url = `https://metabase.bridgeapi.tools/question/1351-view-the-transactions-table?item=${removeAllSpaces(info.selectionText)}`;
+      url = `https://metabase.domain.com/question/1351-view-the-transactions-table?item=${removeAllSpaces(info.selectionText)}`;
     }
     if (info.menuItemId === 'showTransferOnBackstage') {
-      url = `https://backstage.bridgeapi.tools/transfers/${removeAllSpaces(info.selectionText)}`;
+      url = `https://backstage.domain.com/transfers/${removeAllSpaces(info.selectionText)}`;
     }
     if (info.menuItemId === 'showPaymentOnBackstage') {
-      url = `https://backstage.bridgeapi.tools/payments/${removeAllSpaces(info.selectionText)}`;
+      url = `https://backstage.domain.com/payments/${removeAllSpaces(info.selectionText)}`;
     }
     if (info.menuItemId === 'showTicketOnNotion') {
-      url = `https://www.notion.so/bridgeapi/${removeAllSpaces(info.selectionText)}`;
+      url = `https://www.notion.so/company/${removeAllSpaces(info.selectionText)}`;
     }
     chrome.tabs.create({ url });
   });
