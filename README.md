@@ -1,2 +1,1 @@
-# Hakrome
- 
+This Chrome extension was build in order to facilitate no value/recurrent actions for a customer care team such as checking item status, last syncs, checking payment or transfers statuses.
